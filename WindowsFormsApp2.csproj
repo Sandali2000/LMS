@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0203E967-8FF4-46CC-946D-A9931840E2B1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp2</RootNamespace>
+    <AssemblyName>WindowsFormsApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addbook.Designer.cs">
+      <DependentUpon>addbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompleteDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompleteDetails.Designer.cs">
+      <DependentUpon>CompleteDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="issubook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="issubook.Designer.cs">
+      <DependentUpon>issubook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="returnbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="returnbook.Designer.cs">
+      <DependentUpon>returnbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="singup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="singup.Designer.cs">
+      <DependentUpon>singup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student.Designer.cs">
+      <DependentUpon>student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_viwe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_viwe.Designer.cs">
+      <DependentUpon>Student_viwe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="utils.cs" />
+    <Compile Include="viwe_book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viwe_book.Designer.cs">
+      <DependentUpon>viwe_book.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addbook.resx">
+      <DependentUpon>addbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompleteDetails.resx">
+      <DependentUpon>CompleteDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="issubook.resx">
+      <DependentUpon>issubook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="returnbook.resx">
+      <DependentUpon>returnbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singup.resx">
+      <DependentUpon>singup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student.resx">
+      <DependentUpon>student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_viwe.resx">
+      <DependentUpon>Student_viwe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viwe_book.resx">
+      <DependentUpon>viwe_book.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Re1db1526efb831104dc21d66313cc878.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address-book-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\literature-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked-user-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-16-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-9-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1524995997946-a1c2e315a42f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\original.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Box-Loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student-male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_15585.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2580884-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1222709736quill-sign-guestbook-animation-9.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\j-k-rowling-book-quote-1531932701.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Author-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student-male %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9152.png_860.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Raa8db8579d03f2dbe7ad0a554c6345da.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5bf0a3e0601d35349c5451fa52138ea6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\search-gif-image-7.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
